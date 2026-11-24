@@ -1,0 +1,37 @@
+.quote {
+    width: 100%;
+    padding: 81px 59px;
+    background: var(--color-grey-alt);
+}
+
+.quote-text {
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+}
+
+.quote-source {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;  
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .quote-text{
+        font-size: 21px;
+    }
+
+    .quote-source{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    .quote-text{
+        margin-bottom: 7px;
+    }
+}

@@ -1,0 +1,126 @@
+.advantages {
+    background-color: #f8f8f8;
+    padding: 200px 0 200px;
+}
+
+.advantages__title {
+    text-align: center;
+}
+
+.advantages__list {
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.advantages__card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages__card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-left: -60px;
+}
+
+.advantages__card-title img {
+    width: 40px;
+    height: 40px;
+}
+
+.advantages__card-title h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.advantages__card-title h2:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.advantages__card-text {
+    width: 350px;
+    margin: 0;
+}
+
+.advantages__card-title {
+    min-height: 70px;
+}
+
+.advantages__stat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stat__item-img {
+    display: flex;
+    gap: 10px;
+}
+
+.stat__procent {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.advantages__stat-content {
+    max-width: 600px;
+}
+
+.advantages__stat-text:first-child {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1400px) {
+    .advantages__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 80px;
+    }
+
+    .advantages__card-text {
+        text-align: center;
+    }
+
+    .advantages__stat {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .advantages {
+        padding: 100px 0 100px;
+    }
+
+    .stat__item-img-adaptive {
+        width: 85%;
+    }
+}
+
+@media (max-width: 360px) {
+    .advantages__card-title h2 {
+        font-size: 20px;
+    }
+
+    .advantages__card-text,
+    .advantages__stat-text {
+        font-size: 12px;
+    }
+}

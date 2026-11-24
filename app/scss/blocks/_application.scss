@@ -1,0 +1,148 @@
+.application__inner {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    align-items: flex-start;
+    margin-bottom: 150px;
+}
+
+.input__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 579px;
+}
+
+.input__wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 0 0 18px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    color: var(--color-dark-alt);
+    letter-spacing: 0.6px;
+}
+
+.input__wrapper label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: var(--color-alt);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.input:focus ~ label,
+.input:not(:placeholder-shown) ~ label {
+    top: -15px;
+    font-size: 12px;
+    color: #3498db;
+}
+
+.input:focus {
+    border-bottom: 1px solid #3498db;
+}
+
+.input__wrapper:nth-child(3) {
+    margin-top: 21px;
+}
+
+.input__wrapper:nth-child(3) input {
+    padding-bottom: 100px;
+}
+
+.big__input {
+    resize: none;
+    padding-bottom: 50px;
+}
+
+.input__btn {
+    margin: 41px 0 0;
+}
+
+.input__content {
+    background-color: var(--color-grey-alt);
+    width: 600px;
+    min-height: 385px;
+    padding: 45px 0 75px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.input__content p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.application__list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.application__list-link {
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+    .application__inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        margin-bottom: 50px;
+    }
+
+    .input__btn {
+        margin: 30px auto 0;
+    }
+
+    .application__list {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .input__container {
+        width: 332px;
+    }
+
+    .input__content {
+        width: 360px;
+        min-height: 284px;
+        padding: 30px 0 30px 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .input__content {
+        width: 307px;
+        min-height: 272px;
+        padding: 25px 0 25px 25px;
+    }
+
+    .input__content p{
+        font-size: 15px;
+    }
+
+    .application__list-link{
+        font-size: 15px;
+    }
+}

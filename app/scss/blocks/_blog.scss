@@ -1,0 +1,103 @@
+.blog {
+    padding-bottom: 150px;
+}
+
+.swiper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.swiper-slide {
+    background-image:
+        url(../images/main/slider/затемнение.png),
+        url(../images/main/slider/1.jpg);
+
+    background-position:
+        center center,
+        center center;
+
+    background-repeat: no-repeat, no-repeat;
+    min-height: 800px;
+    background-size: cover, cover;
+}
+
+.swiper-slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 660px;
+    transform: translateY(-65%);
+}
+
+.slider__title {
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 56px;
+    color: var(--color-light);
+}
+
+.slider__text {
+    color: var(--color-light);
+}
+
+.swiper-pagination {
+    margin-bottom: 77px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-horizontal.swiper-pagination-bullets,
+.swiper-pagination-bullet {
+    margin: 0 0 77px;
+}
+
+.swiper-pagination-bullet {
+    margin: 0 8px 0 !important;
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-light);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-alt);
+}
+
+@media (max-width: 1300px) {
+
+    .swiper-slide-content{
+        transform: translateX(-50%);
+        text-align: center;
+        top: 30%;
+        min-width: 620px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider__title{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .swiper-slide-content{
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 360px) {
+    .swiper-slide-content{
+        min-width: 340px;
+    }
+
+    .slider__title{
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .slider__text{
+        font-size: 12px;
+    }
+}

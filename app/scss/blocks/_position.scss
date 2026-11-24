@@ -1,0 +1,68 @@
+.position {
+    padding: 150px 0 150px;
+}
+
+.position__inner {
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    top: 101px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-width: 1100px) {
+    .dot {
+        top: 84px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .dot {
+        top: 74px;
+    }
+}
+
+@media (max-width: 920px) {
+    .dot {
+        width: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .dot {
+        top: 61px;
+    }
+}
+
+@media (max-width: 700px) {
+    .dot {
+        top: 51px;
+    }
+
+    .position{
+        padding: 100px 0 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .dot {
+        top: 43px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .dot {
+        top: 33px;
+
+    }
+}
+
+@media (max-width: 400px) {
+    .dot {
+        top: 21px;
+    }
+}
